@@ -1,21 +1,17 @@
 import "./App.css";
 import React from "react";
-import SetPattern from "./pages/setPattern";
-import ConfirmPattern from "./pages/confirmPattern";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
+import EnterPattern from "./pages/enterPattern";
 
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/confirm-pattern">
-          <ConfirmPattern />
-        </Route>
-      </Switch>
+      <Home />
+      {/* <Routes>
+        <Route path="/" element={} />
+        {/* <Route path="/enter-pattern" element={<EnterPattern />} /> */}
+      {/* </Routes> */} */}
     </BrowserRouter>
   );
 }

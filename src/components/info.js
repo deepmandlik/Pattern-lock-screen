@@ -10,7 +10,7 @@ export default function Info({title}) {
   const date = new Date();
 
   return (
-    <div class="context">
+    <div className="context">
       <h1>{formatAMPM(date)}</h1>
       <p>{date.toLocaleString().split(",")[0]}</p>
       <h6 className="heading">{title}</h6>

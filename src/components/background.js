@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Background() {
   return (
-    <div class="area">
-      <ul class="circles">
-        {["", "", "", "", "", "", "", ""].map(() => (
-          <li></li>
+    <div className="area">
+      <ul className="circles">
+        {["", "", "", "", "", "", "", ""].map((value , index) => (
+          <li key={index}></li>
         ))}
       </ul>
     </div>

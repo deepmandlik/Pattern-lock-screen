@@ -13,7 +13,7 @@ body {
   width: 100%;
   position: absolute;
   text-align: center;
-  top: 10vh;
+  top: 12vh;
   color: #fff;
 }
 
@@ -44,7 +44,7 @@ body {
     z-index: 5;
     margin-right: 20px;
     color : '#FFF';
-  transform: translate(-50%, 1590%);
+   transform: translate(-50%, 1590%);
 }
 
 .btn1 {
