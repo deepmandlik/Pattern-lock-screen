@@ -8,10 +8,6 @@ function App() {
   return (
     <BrowserRouter>
       <Home />
-      {/* <Routes>
-        <Route path="/" element={} />
-        {/* <Route path="/enter-pattern" element={<EnterPattern />} /> */}
-      {/* </Routes> */} */}
     </BrowserRouter>
   );
 }

@@ -38,6 +38,7 @@ function ConfirmPattern({
       setTimeout(() => {
         setError(false);
         setPattern([]);
+        setSelectedPattern([]);
       }, 2000);
     }
   };
