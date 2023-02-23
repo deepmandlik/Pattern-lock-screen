@@ -6,7 +6,6 @@ import Pattern from "../components/pattern";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Message from "../components/message";
-import { useNavigate } from "react-router-dom";
 
 function ConfirmPattern({
   setPattern,
@@ -20,11 +19,9 @@ function ConfirmPattern({
   const [color, setcolor] = useState("");
   const [error, setError] = useState(false);
 
-  const navigate = useNavigate();
-
   const checkPattern = () => {
     setOpen(true);
-    if (JSON.stringify(selectedPattern) == JSON.stringify(pattern)) {
+    if (JSON.stringify(selectedPattern) === JSON.stringify(pattern)) {
       setMessage("Pattern successfully set");
       setcolor("success");
       localStorage.setItem("recordPattern", JSON.stringify(selectedPattern));

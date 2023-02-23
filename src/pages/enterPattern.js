@@ -29,7 +29,7 @@ function EnterPattern({ setRecordPattern, setSelectedPattern }) {
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
     setBtnOpen(false);
-    if (index == 0) {
+    if (index === 0) {
       toggleModal(true);
     } else {
       setOpen(true);

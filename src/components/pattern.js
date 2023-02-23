@@ -24,7 +24,7 @@ export default function Pattern({
 
   const verifyPattern = () => {
     setOpen(true);
-    if (recordPattern == JSON.stringify(pattern)) {
+    if (recordPattern === JSON.stringify(pattern)) {
       if (reset) {
         setMessage("Permission to reset pattern");
         setcolor("success");
